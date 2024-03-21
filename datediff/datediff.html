@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gap Between Days Calculator</title>
+  <link rel="stylesheet" href="./ddstyle.css">  
+</head>
+
+<body>
+  <h1>Timely Filing Calculator</h1>
+  <div class="container">  
+	<div class="form-label">
+  		<form action="javascript:void(0)">
+
+  		  <label for="from">From Date (MM-DD-YYYY):</label>
+
+  		  <input type="date" id="from" required>
+
+  		  <label for="to">To Date (MM-DD-YYYY):</label>
+
+  		  <input type="date" id="to" required>
+
+  		  <br>
+	<div class="btn-container">
+            
+	      <div class="btn-container-list">
+		    <button onclick="calculate()">Calculate</button>
+   		    <button onclick="document.getElementById('from').value = ''; document.getElementById('to').value = ''; document.getElementById('result').innerHTML = ''">Reset</button>
+	      </div>
+	</div>
+		
+    		
+  		</form>
+<p id="result"></p>
+	</div>
+</div>
+
+<script src="./ddmain.js"></script>
+ 
+</body>
+</html>

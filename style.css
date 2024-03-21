@@ -1,0 +1,89 @@
+body {
+  font-family: roboto;
+}  
+
+.carousel-container {
+  width: 100%;
+  height: 80vh;	
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for carousel items */
+.carousel-item {
+  display: none;
+  transition: opacity 0.5s ease;
+  height: 100%
+}
+
+/* Style for active carousel item */
+.active {
+  display: block;
+}
+
+/* Style for iframe */
+iframe {
+  border: none;
+  width: 100%;
+  height: 80vh;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Style for buttons */
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fa4d1d;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  color: #fa4d1d;
+      background-color: #fff;
+}
+
+/* Style for Previous button */
+.prev {
+  left: 10px;
+}
+
+/* Style for Next button */
+.next {
+      right: 10px;
+}
+
+footer {
+  text-align: center;
+  height: 20vh;
+  padding: 10px 0;
+  background-color: #000000;
+}
+
+footer p {
+  color: #fa4d1d;
+  display: flex;
+  justify-content: center;	
+  margin-bottom: 5px;
+}
+
+footer .nish {
+margin-top: 30px
+}
+
+footer p .footer-link {
+  color: #fa4d1d;
+  text-decoration: none;
+  padding-right: 50px;
+  margin: 0 5px;
+}
